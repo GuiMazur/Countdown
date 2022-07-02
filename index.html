@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <img src="./images/top-image.svg" alt="" id="bg1">
+    <img src="./images/bottom-image.svg" alt="" id="bg2">
+    <main>
+        <section id="countdown">
+            <h1 id="title">LANÇAMENTO EM...</h1>
+            <h4 id="labels"><p>         Dias</p> <p>Horas</p> <p>Minutos</p> <p>Segundos</p></h4>
+            <time id="time"></time>
+            <p id="text">Inscreva-se para saber mais informações sobre o lançamento!</p>
+            <button id="subscribe">Inscreva-se</button>
+            <div id="subscribe-modal">
+                <button id="closebutton">X</button>
+                <form action="send">
+                    <div class="field">
+                        <label for="name">Nome:</label>
+                        <input type="text" name="name" id="name">                        
+                    </div>
+                    <div class="field">
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email">                            
+                    </div>
+                    <div class="field">
+                        <button type="submit" id="send">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <figure>
+            <img src="images/rocket.svg" alt="" id="image">
+        </figure>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
